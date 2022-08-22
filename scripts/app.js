@@ -52,6 +52,7 @@ function addPlayerToTheList(event) {
 		li.innerHTML = `${selectedPlayers + 1}. ${playerName}`;
 		allPlayerList.appendChild(li);
 
+		resetAllField();
 		selectPlayerButton.setAttribute('disabled', true);
 	} else {
 		alert('You can not select more than five players.');
@@ -119,7 +120,6 @@ function calculateTotalCost(playerCost, costForManager, costForCoach) {
 for (const selectPlayerButton of selectPlayersButtons) {
 	selectPlayerButton.addEventListener('click', function (event) {
 		addPlayerToTheList(event);
-		resetAllField();
 	});
 }
 
