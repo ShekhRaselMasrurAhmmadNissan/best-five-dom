@@ -20,8 +20,8 @@ function resetAllField() {
 	costPerPlayerField.value = '';
 	costForManagerField.value = '';
 	costForCoachField.value = '';
-	totalPlayerCostField.value = '';
-	totalCostField.value = '';
+	totalPlayerCostField.innerText = 0;
+	totalCostField.innerText = 0;
 }
 
 /**
