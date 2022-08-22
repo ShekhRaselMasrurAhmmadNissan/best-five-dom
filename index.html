@@ -15,7 +15,7 @@
 		<!-- Tailwind CSS CDN -->
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
-	<body class="bg-gray-700">
+	<body class="bg-gray-900">
 		<!-- Header Section Start -->
 		<header class="bg-black py-16 text-center">
 			<img
@@ -65,8 +65,7 @@
 					</figure>
 					<div class="card-body">
 						<h2
-							id="player-name"
-							class="card-title text-white mx-auto font-bold text-2xl"
+							class="player-name card-title text-white mx-auto font-bold text-2xl"
 						>
 							TGLTN
 						</h2>
@@ -98,7 +97,7 @@
 					</figure>
 					<div class="card-body">
 						<h2
-							class="select-player card-title text-white mx-auto font-bold text-2xl"
+							class="player-name card-title text-white mx-auto font-bold text-2xl"
 						>
 							Hwinn
 						</h2>
@@ -108,8 +107,7 @@
 						</p>
 						<div class="card-actions justify-center">
 							<button
-								id="select-player"
-								class="px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
 							>
 								SELECT
 							</button>
@@ -131,7 +129,7 @@
 					</figure>
 					<div class="card-body">
 						<h2
-							class="select-player card-title text-white mx-auto font-bold text-2xl"
+							class="player-name card-title text-white mx-auto font-bold text-2xl"
 						>
 							Shrimzy
 						</h2>
@@ -163,8 +161,7 @@
 					</figure>
 					<div class="card-body">
 						<h2
-							id="player-name"
-							class="card-title text-white mx-auto font-bold text-2xl"
+							class="player-name card-title text-white mx-auto font-bold text-2xl"
 						>
 							PurdyKurty
 						</h2>
@@ -192,8 +189,7 @@
 					</figure>
 					<div class="card-body">
 						<h2
-							id="player-name"
-							class="card-title text-white mx-auto font-bold text-2xl"
+							class="player-name card-title text-white mx-auto font-bold text-2xl"
 						>
 							Pio
 						</h2>
@@ -221,8 +217,7 @@
 					</figure>
 					<div class="card-body">
 						<h2
-							id="player-name"
-							class="card-title text-white mx-auto font-bold text-2xl"
+							class="player-name card-title text-white mx-auto font-bold text-2xl"
 						>
 							Ubah
 						</h2>
@@ -246,8 +241,101 @@
 			<!-- Players Cost and Calculation Start -->
 			<section
 				id="players-card-container"
-				class="container text-white col-span-1"
-			></section>
+				class="container text-white col-span-1 space-y-6"
+			>
+				<!-- Players List Section Start -->
+				<section class="bg-black p-4 rounded-2xl h-[27rem]">
+					<img
+						class="mx-auto mb-16"
+						src="./images/selected-players.png"
+						alt=""
+					/>
+
+					<div class="container mt-8">
+						<ol id="players-list" class="container text-2xl pl-8">
+							<li class="my-6">1. TGLTN</li>
+							<li class="my-6">2. TGLTN</li>
+							<li class="my-6">3. TGLTN</li>
+							<li class="my-6">4. TGLTN</li>
+							<li class="my-6">5. TGLTN</li>
+						</ol>
+					</div>
+				</section>
+				<!-- Players List Section End -->
+
+				<!-- Budget Calculation Section Start -->
+				<section class="bg-black rounded-2xl p-4">
+					<img
+						class="mx-auto mb-4"
+						src="./images/budget.png"
+						alt=""
+					/>
+					<div class="space-y-4">
+						<div class="text-lg space-x-1 flex justify-between">
+							<label for="per-player-cost">Per Player</label>
+							<input
+								type="number"
+								name="per-player-cost"
+								id="per-player-cost"
+								class="text-black outline-none"
+							/>
+						</div>
+
+						<div class="card-actions justify-center">
+							<button
+								id="player-cost-calculate"
+								class="px-20 py-1 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+							>
+								Calculate
+							</button>
+						</div>
+
+						<div class="text-xl space-x-1 font-semibold pb-8">
+							<p class="flex justify-evenly">
+								Player Expenses:
+								<span>$<span id="total-player-cost">0</span></span>
+							</p>
+						</div>
+
+						<div class="text-lg space-x-1 flex justify-between">
+							<label for="cost-for-manager">Manager</label>
+							<input
+								type="number"
+								name="cost-for-manager"
+								id="cost-for-manager"
+								class="text-black"
+							/>
+						</div>
+
+						<div class="text-lg space-x-1 flex justify-between">
+							<label for="cost-for-coach">Coach</label>
+							<input
+								type="number"
+								name="cost-for-coach"
+								id="cost-for-coach"
+								class="text-black"
+							/>
+						</div>
+
+						<div class="card-actions justify-center">
+							<button
+								id="all-cost-calculate"
+								class="px-20 py-1 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+							>
+								Calculate
+							</button>
+						</div>
+
+						<div class="text-lg space-x-1">
+							<p class="flex justify-evenly">
+								Total Expenses:
+								<span>$<span id="total-expenses">0</span></span>
+							</p>
+						</div>
+					</div>
+				</section>
+				<!-- Budget Calculation Section End -->
+			</section>
 		</main>
 		<!-- Main Section End -->
 
