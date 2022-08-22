@@ -45,7 +45,7 @@
 
 		<!-- Main Section Start -->
 		<main
-			class="conatiner my-8 py-6 w-[90%] mx-auto grid grid-cols-4 gap-4"
+			class="conatiner my-8 py-6 w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4"
 		>
 			<!-- Players Card Container Start -->
 			<section
@@ -75,7 +75,7 @@
 						</p>
 						<div class="card-actions justify-center">
 							<button
-								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+								class="select-player px-10 lg:px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
 							>
 								SELECT
 							</button>
@@ -107,7 +107,7 @@
 						</p>
 						<div class="card-actions justify-center">
 							<button
-								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+								class="select-player px-10 lg:px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
 							>
 								SELECT
 							</button>
@@ -139,7 +139,7 @@
 						</p>
 						<div class="card-actions justify-center">
 							<button
-								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+								class="select-player px-10 lg:px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
 							>
 								SELECT
 							</button>
@@ -171,7 +171,7 @@
 						</p>
 						<div class="card-actions justify-center">
 							<button
-								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+								class="select-player px-10 lg:px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
 							>
 								SELECT
 							</button>
@@ -199,7 +199,7 @@
 						</p>
 						<div class="card-actions justify-center">
 							<button
-								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+								class="select-player px-10 lg:px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
 							>
 								SELECT
 							</button>
@@ -227,7 +227,7 @@
 						</p>
 						<div class="card-actions justify-center">
 							<button
-								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+								class="select-player px-10 lg:px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
 							>
 								SELECT
 							</button>
@@ -240,11 +240,11 @@
 
 			<!-- Players Cost and Calculation Start -->
 			<section
-				id="players-card-container"
-				class="container text-white col-span-1 space-y-6"
+				id="players-calculation-container"
+				class="container text-white col-span-1 space-y-6 w-full"
 			>
 				<!-- Players List Section Start -->
-				<section class="bg-black p-4 rounded-2xl h-[27rem]">
+				<section class="bg-black p-4 rounded-2xl h-[27rem] w-full">
 					<img
 						class="mx-auto mb-16"
 						src="./images/selected-players.png"
@@ -252,7 +252,10 @@
 					/>
 
 					<div class="container mt-8">
-						<ol id="players-list" class="container text-2xl pl-8 space-y-6">
+						<ol
+							id="players-list"
+							class="container text-2xl pl-8 space-y-6"
+						>
 							<!-- <li>1. TGLTN</li> -->
 						</ol>
 					</div>
@@ -260,7 +263,7 @@
 				<!-- Players List Section End -->
 
 				<!-- Budget Calculation Section Start -->
-				<section class="bg-black rounded-2xl p-4">
+				<section class="bg-black rounded-2xl px-32 py-4 lg:p-4 w-full">
 					<img
 						class="mx-auto mb-4"
 						src="./images/budget.png"
@@ -273,7 +276,7 @@
 								type="number"
 								name="per-player-cost"
 								id="per-player-cost"
-								class="text-black outline-none px-1"
+								class="text-black outline-none px-1 rounded-md"
 							/>
 						</div>
 
@@ -289,7 +292,11 @@
 						<div class="text-xl space-x-1 font-semibold pb-8">
 							<p class="flex justify-evenly">
 								Player Expenses:
-								<span>$<span id="total-player-cost">0</span></span>
+								<span
+									>$<span id="total-player-cost"
+										>0</span
+									></span
+								>
 							</p>
 						</div>
 
@@ -299,7 +306,7 @@
 								type="number"
 								name="cost-for-manager"
 								id="cost-for-manager"
-								class="text-black px-1"
+								class="text-black px-1 outline-none rounded-md"
 							/>
 						</div>
 
@@ -309,7 +316,7 @@
 								type="number"
 								name="cost-for-coach"
 								id="cost-for-coach"
-								class="text-black px-1"
+								class="text-black px-1 outline-none rounded-md"
 							/>
 						</div>
 
@@ -318,7 +325,7 @@
 								id="all-cost-calculate"
 								class="px-20 py-1 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
 							>
-								Calculate
+								Calculate Total
 							</button>
 						</div>
 
