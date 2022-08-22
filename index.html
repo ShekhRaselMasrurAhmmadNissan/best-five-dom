@@ -15,20 +15,26 @@
 		<!-- Tailwind CSS CDN -->
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
-	<body>
+	<body class="bg-gray-700">
 		<!-- Header Section Start -->
 		<header class="bg-black py-16 text-center">
-			<img class="mx-auto" src="./images/logo.png" alt="" />
+			<img
+				class="mx-auto hover:scale-110 duration-500 ease-in-out cursor-pointer"
+				src="./images/logo.png"
+				alt=""
+			/>
 			<p class="text-white text-lg w-3/5 mx-auto mt-4">
 				<abbr
-					class="text-purple-600 cursor-pointer"
+					class="text-teal-200 cursor-pointer"
 					title="Players Unknown Battle Ground"
 					>PUBG</abbr
 				>
 				is an well known virtual game. The community of this game is
 				growing very fast and the revenue is increasing day by day. As
 				the date of
-				<abbr class="text-purple-600 cursor-pointer" title="PUBG Global Championship"
+				<abbr
+					class="text-teal-200 cursor-pointer"
+					title="PUBG Global Championship"
 					>PGC</abbr
 				>
 				is closing you might want to make a team of your own. Select
@@ -36,6 +42,214 @@
 			</p>
 		</header>
 		<!-- Header Section End -->
+
+		<!-- Main Section Start -->
+		<main
+			class="conatiner my-8 py-6 w-[90%] mx-auto grid grid-cols-4 gap-4"
+		>
+			<!-- Players Card Container Start -->
+			<section
+				id="players-card-container"
+				class="container text-white col-span-3 grid grid-cols-3 gap-4"
+			>
+				<!-- Single Card Start -->
+				<div
+					class="card w-full bg-base-100 shadow-xl bg-black duration-500"
+				>
+					<figure>
+						<img
+							class="h-64"
+							src="./images/TGLTN.png"
+							alt="TGLTN"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2
+							id="player-name"
+							class="card-title text-white mx-auto font-bold text-2xl"
+						>
+							TGLTN
+						</h2>
+						<p class="text-white flex items-center justify-evenly">
+							<span>Kills: 61</span>
+							<span>Assists: 33</span>
+						</p>
+						<div class="card-actions justify-center">
+							<button
+								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+							>
+								SELECT
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Single Card End -->
+
+				<!-- Single Card Start -->
+				<div
+					class="card w-full bg-base-100 shadow-xl bg-black duration-500"
+				>
+					<figure>
+						<img
+							class="h-64"
+							src="./images/hwinn.png"
+							alt="Hwinn"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2
+							class="select-player card-title text-white mx-auto font-bold text-2xl"
+						>
+							Hwinn
+						</h2>
+						<p class="text-white flex items-center justify-evenly">
+							<span>Kills: 38</span>
+							<span>Assists: 31</span>
+						</p>
+						<div class="card-actions justify-center">
+							<button
+								id="select-player"
+								class="px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+							>
+								SELECT
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Single Card End -->
+
+				<!-- Single Card Start -->
+				<div
+					class="card w-full bg-base-100 shadow-xl bg-black duration-500"
+				>
+					<figure>
+						<img
+							class="h-64"
+							src="./images/Shrimzy.png"
+							alt="Shrimzy"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2
+							class="select-player card-title text-white mx-auto font-bold text-2xl"
+						>
+							Shrimzy
+						</h2>
+						<p class="text-white flex items-center justify-evenly">
+							<span>Kills: 40</span>
+							<span>Assists: 25</span>
+						</p>
+						<div class="card-actions justify-center">
+							<button
+								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+							>
+								SELECT
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Single Card End -->
+
+				<!-- Single Card Start -->
+				<div
+					class="card w-full bg-base-100 shadow-xl bg-black duration-500"
+				>
+					<figure>
+						<img
+							class="h-64"
+							src="./images/PurdyKurty.png"
+							alt="PurdyKurty"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2
+							id="player-name"
+							class="card-title text-white mx-auto font-bold text-2xl"
+						>
+							PurdyKurty
+						</h2>
+						<p class="text-white flex items-center justify-evenly">
+							<span>Kills: 30</span>
+							<span>Assists: 43</span>
+						</p>
+						<div class="card-actions justify-center">
+							<button
+								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+							>
+								SELECT
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Single Card End -->
+
+				<!-- Single Card Start -->
+				<div
+					class="card w-full bg-base-100 shadow-xl bg-black duration-500"
+				>
+					<figure>
+						<img class="h-64" src="./images/pio.png" alt="Pio" />
+					</figure>
+					<div class="card-body">
+						<h2
+							id="player-name"
+							class="card-title text-white mx-auto font-bold text-2xl"
+						>
+							Pio
+						</h2>
+						<p class="text-white flex items-center justify-evenly">
+							<span>Kills: 40</span>
+							<span>Assists: 53</span>
+						</p>
+						<div class="card-actions justify-center">
+							<button
+								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+							>
+								SELECT
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Single Card End -->
+
+				<!-- Single Card Start -->
+				<div
+					class="card w-full bg-base-100 shadow-xl bg-black duration-500"
+				>
+					<figure>
+						<img class="h-64" src="./images/ubah.png" alt="Ubah" />
+					</figure>
+					<div class="card-body">
+						<h2
+							id="player-name"
+							class="card-title text-white mx-auto font-bold text-2xl"
+						>
+							Ubah
+						</h2>
+						<p class="text-white flex items-center justify-evenly">
+							<span>Kills: 40</span>
+							<span>Assists: 27</span>
+						</p>
+						<div class="card-actions justify-center">
+							<button
+								class="select-player px-20 py-2 rounded-lg text-xl items-center bg-blue-600 hover:scale-105 duration-500 ease-in-out disabled:bg-gray-500 disabled:hover:scale-100"
+							>
+								SELECT
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Single Card End -->
+			</section>
+			<!-- Players Cards Container End -->
+
+			<!-- Players Cost and Calculation Start -->
+			<section
+				id="players-card-container"
+				class="container text-white col-span-1"
+			></section>
+		</main>
+		<!-- Main Section End -->
 
 		<!-- JS Script -->
 		<script src="./scripts/app.js"></script>
