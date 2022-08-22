@@ -53,7 +53,7 @@
 			<!-- Players Card Container Start -->
 			<section
 				id="players-card-container"
-				class="container text-white col-span-3 grid grid-cols-3 gap-4"
+				class="container text-white col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-4"
 			>
 				<!-- Single Card Start -->
 				<div
@@ -266,14 +266,14 @@
 				<!-- Players List Section End -->
 
 				<!-- Budget Calculation Section Start -->
-				<section class="bg-black rounded-2xl px-32 py-4 lg:p-4 w-full">
+				<section class="bg-black rounded-2xl md:px-32 py-4 lg:p-4 w-full">
 					<img
 						class="mx-auto mb-4"
 						src="./images/budget.png"
 						alt=""
 					/>
 					<div class="space-y-4">
-						<div class="text-lg space-x-1 flex justify-between">
+						<div class="text-lg space-x-1 flex justify-around md:justify-between">
 							<label for="per-player-cost">Per Player</label>
 							<input
 								type="number"
@@ -303,7 +303,7 @@
 							</p>
 						</div>
 
-						<div class="text-lg space-x-1 flex justify-between">
+						<div class="text-lg space-x-1 flex justify-around md:justify-between">
 							<label for="cost-for-manager">Manager</label>
 							<input
 								type="number"
@@ -313,7 +313,7 @@
 							/>
 						</div>
 
-						<div class="text-lg space-x-1 flex justify-between">
+						<div class="text-lg space-x-1 flex justify-around md:justify-between">
 							<label for="cost-for-coach">Coach</label>
 							<input
 								type="number"
