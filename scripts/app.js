@@ -137,7 +137,7 @@ playerCostCalculateBtn.addEventListener('click', function (event) {
 	} else if (isNaN(costPerPlayer) || costPerPlayer <= 0) {
 		alert('Please Provide valid cost.');
 		costPerPlayerField.value = '';
-		totalPlayerCostField.innerText = '';
+		totalPlayerCostField.innerText = 0;
 	} else {
 		totalPlayerCost = calculatePlayerCost(totalPlayer, costPerPlayer);
 		totalPlayerCostField.innerText = totalPlayerCost;
