@@ -137,10 +137,14 @@ playerCostCalculateBtn.addEventListener('click', function (event) {
 	} else if (isNaN(costPerPlayer) || costPerPlayer <= 0) {
 		alert('Please Provide valid cost.');
 		costPerPlayerField.value = '';
+		totalPlayerCostField.innerText = '';
 	} else {
 		totalPlayerCost = calculatePlayerCost(totalPlayer, costPerPlayer);
 		totalPlayerCostField.innerText = totalPlayerCost;
 	}
+	costForManagerField.value = '';
+	costForCoachField.value = '';
+	totalCostField.innerText = 0;
 });
 
 /**
@@ -163,6 +167,7 @@ totalCostCalculationBtn.addEventListener('click', function (event) {
 		alert('Please Provide valid cost.');
 		costForManagerField.value = '';
 		costForCoachField.value = '';
+		totalCostField.innerText = 0;
 	} else {
 		totalCost = calculateTotalCost(
 			playerCost,
