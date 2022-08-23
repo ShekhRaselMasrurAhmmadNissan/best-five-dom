@@ -161,6 +161,8 @@ totalCostCalculationBtn.addEventListener('click', function (event) {
 		costForCoach <= 0
 	) {
 		alert('Please Provide valid cost.');
+		costForManagerField.value = '';
+		costForCoachField.value = '';
 	} else {
 		totalCost = calculateTotalCost(
 			playerCost,
